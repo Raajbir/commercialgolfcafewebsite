@@ -2,12 +2,12 @@ const crsr = document.querySelector("#cursor");
 const blur = document.querySelector("#cursor-blur");
 const bgtext = document.querySelector("#bg");
 
-document.addEventListener("mousemove", function (dets) {
-  crsr.style.left = dets.x - 10 + "px";
-  blur.style.left = dets.x - 200 + "px";
-  crsr.style.top = dets.y - 10 + "px";
-  blur.style.top = dets.y - 200 + "px";
-});
+// document.addEventListener("mousemove", function (dets) {
+//   crsr.style.left = dets.x - 10 + "px";
+//   blur.style.left = dets.x - 200 + "px";
+//   crsr.style.top = dets.y - 10 + "px";
+//   blur.style.top = dets.y - 200 + "px";
+// });
 
 var h4all = document.querySelectorAll("#nav h4");
 h4all.forEach(function(elem){

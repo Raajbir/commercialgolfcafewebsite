@@ -1,73 +1,49 @@
-const crsr = document.querySelector("#cursor");
-const blur = document.querySelector("#cursor-blur");
-const bgtext = document.querySelector("#bg");
+// const crsr = document.querySelector("#cursor");
+// const bgtext = document.querySelector("#bg");
 
-document.addEventListener("mousemove", function (dets) {
-  crsr.style.left = dets.x - 10 + "px";
-  blur.style.left = dets.x - 200 + "px";
-  crsr.style.top = dets.y - 10 + "px";
-  blur.style.top = dets.y - 200 + "px";
-});
+// document.addEventListener("mousemove", function (dets) {
+//   crsr.style.left = dets.x - 10 + "px";
+//   crsr.style.top = dets.y - 10 + "px";
+// });
 
-var h4all = document.querySelectorAll("#nav h4");
-h4all.forEach(function(elem){
-  elem.addEventListener("mouseenter",function(){
-    crsr.style.scale=3;
-    crsr.style.border="1px solid white";
-    crsr.style.backgroundColor="transparent";
-  })
-  elem.addEventListener("mouseleave",function(){
-    crsr.style.scale=1;
-    crsr.style.border="0px";
-    crsr.style.backgroundColor="rgb(145,181,8)";
-  })
-})
+// var h4all = document.querySelectorAll("#nav h4");
+// h4all.forEach(function(elem){
+//   elem.addEventListener("mouseenter",function(){
+//     crsr.style.scale=3;
+//     crsr.style.border="1px solid white";
+//     crsr.style.backgroundColor="transparent";
+//   })
+//   elem.addEventListener("mouseleave",function(){
+//     crsr.style.scale=1;
+//     crsr.style.border="0px";
+//     crsr.style.backgroundColor="rgb(145,181,8)";
+//   })
+// })
 
 
-var cardAll = document.querySelectorAll(".card");
-cardAll.forEach(function(elem){
-  elem.addEventListener("mouseenter",function(){
-    crsr.style.scale=3;
-    crsr.style.border="1px solid white";
-    crsr.style.backgroundColor="transparent";
-  })
-  elem.addEventListener("mouseleave",function(){
-    crsr.style.scale=1;
-    crsr.style.border="0px";
-    crsr.style.backgroundColor="rgb(145,181,8)";
-  })
-})
+// var cardAll = document.querySelectorAll(".card");
+// cardAll.forEach(function(elem){
+//   elem.addEventListener("mouseenter",function(){
+//     crsr.style.scale=3;
+//     crsr.style.border="1px solid white";
+//     crsr.style.backgroundColor="transparent";
+//   })
+//   elem.addEventListener("mouseleave",function(){
+//     crsr.style.scale=1;
+//     crsr.style.border="0px";
+//     crsr.style.backgroundColor="rgb(145,181,8)";
+//   })
+// })
 
 var elemAll = document.querySelectorAll(".elem");
 elemAll.forEach(function(elem){
   elem.addEventListener("mouseenter",function(){
-    crsr.style.scale=3;
-    crsr.style.border="1px solid white";
-    crsr.style.backgroundColor="transparent";
     bgtext.style.color="rgb(145,181,8)";
   })
   elem.addEventListener("mouseleave",function(){
-    crsr.style.scale=1;
-    crsr.style.border="0px";
-    crsr.style.backgroundColor="rgb(145,181,8)";
     bgtext.style.color="transparent";
   })
 })
-
-var footerAll = document.querySelectorAll(".footerelem");
-footerAll.forEach(function(elem){
-  elem.addEventListener("mouseenter",function(){
-    crsr.style.scale=3;
-    crsr.style.border="1px solid white";
-    crsr.style.backgroundColor="transparent";
-  })
-  elem.addEventListener("mouseleave",function(){
-    crsr.style.scale=1;
-    crsr.style.border="0px";
-    crsr.style.backgroundColor="rgb(145,181,8)";
-  })
-})
-
 
 gsap.to("#nav", {
   backgroundColor: "#000",

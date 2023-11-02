@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 50px;
 }
 
-#cursor{
+/* #cursor{
     height:20px;
     width: 20px;
     position:fixed;
@@ -36,18 +36,7 @@ body::-webkit-scrollbar-thumb{
     z-index: 99;
     transition: all linear 0.1s;
     
-}
-
-#cursor-blur{
-    height:400px;
-    width: 400px;
-    position:fixed;
-    background-color: rgba(146, 181, 8, 0.288);
-    border-radius: 50%;
-    z-index: 9;
-    filter: blur(80px);
-    transition: all linear 0.3s;
-}
+} */
 
 #nav{
     height: 140px;
@@ -73,6 +62,10 @@ body {
 #nav h4{
     text-transform: uppercase;
     font-weight: 500;
+}
+
+#nav h4:hover{
+    color: #95c11e;
 }
 
 video{
@@ -253,6 +246,7 @@ video{
     gap:50px;
     position:relative;
     z-index: 10;
+    transition: all linear 0.6s;
 }
 
 #card1 h3{
@@ -295,7 +289,7 @@ video{
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    transition: all ease 0.6s;
+    transition: all linear 0.6s;
     position: relative;
     z-index: 10;
 }
